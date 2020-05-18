@@ -58,11 +58,16 @@ let g:tagbar_type_go = {
 			\ 'ctagsargs' : '-sort -silent'
 			\ }
 
-" 设置tagbar的窗口宽度
+" set tagbar width
 let g:tagbar_width=30
-" 映射Tagbar的快捷键,按F8自动打开
+
 map <F2> :GoImports<CR>
-map <F6> :GoRun<CR>
+
+"build and run project
+map <F4> :GoRun<CR>
+
+"build and run current file
+map <F5> :!go run ./% <CR> 
 map <F8> :TagbarToggle<CR>
 map <F12> :!gotags -R $GOPATH/src/github.com > tags <CR>
 
