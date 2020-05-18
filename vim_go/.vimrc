@@ -61,20 +61,19 @@ let g:tagbar_type_go = {
 " 设置tagbar的窗口宽度
 let g:tagbar_width=30
 " 映射Tagbar的快捷键,按F8自动打开
+map <F2> :GoImports<CR>
+map <F6> :GoRun<CR>
 map <F8> :TagbarToggle<CR>
 map <F12> :!gotags -R $GOPATH/src/github.com > tags <CR>
 
 let g:godef_split=3 """左右打开新窗口的时候
 let g:godef_same_file_in_same_window=1 """函数在同一个文件中时不需要打开新窗口
-imap <F6> <C-x><C-o>
+imap <F2> <C-x><C-o>
 
 autocmd FileType go nnoremap <buffer> gd :call GodefUnderCursor()<cr>
 autocmd FileType go nnoremap <buffer> <C-]> :call GodefUnderCursor()<cr>
 let g:godef_split=3 """左右打开新窗口的时候
 let g:godef_same_file_in_same_window=1 """函数在同一个文件中时不需要打开新窗口
 "autocmd BufWritePre *.go :Fmt
-
-
-
 
 
