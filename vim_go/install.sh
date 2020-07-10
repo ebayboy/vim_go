@@ -18,8 +18,8 @@ function install_tools {
 }
 
 
-#ln -s ${PWD}/.vim /root/.
-#ln -s ${PWD}/.vimrc /root/.
+ln -s ${PWD}/.vim /root/.
+ln -s ${PWD}/.vimrc /root/.
 
 install_tools
 
