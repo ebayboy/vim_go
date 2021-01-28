@@ -10,3 +10,5 @@ clang, clang-dev
 apt install astyle
 
 3. vim exec :PluginInstall
+
+4. .vim/bundle/YouCompleteMe# /root/.vim/bundle/YouCompleteMe/install.py
