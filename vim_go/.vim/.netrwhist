@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =3
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/root/.gvm/pkgsets'
+let g:netrw_dirhist_4='/workspace/go/src/git.jd.com/fanpengfei1/mid/build'
 let g:netrw_dirhist_3='/export/servers/riskStat/bin'
 let g:netrw_dirhist_2='/root/go/src/github.com/jd_log_proxy/src/JDRedis'
 let g:netrw_dirhist_1='/root/.vim/bundle/Vundle.vim'

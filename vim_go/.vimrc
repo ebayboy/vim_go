@@ -43,7 +43,7 @@ set fencs=utf-8,gbk
 set softtabstop=4
 set shiftwidth=4
 
-"set autoindent
+set autoindent
 set smartindent
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
@@ -84,7 +84,7 @@ let g:tagbar_type_go = {
 " set tagbar width
 let g:tagbar_width=30
 
-map <F2> :GoImports<CR>
+map <F2> :!goimports -w ./% <CR>
 
 "build and run project
 map <F4>  <ESC> :w <CR> :GoRun<CR>
@@ -92,12 +92,15 @@ map <F4>  <ESC> :w <CR> :GoRun<CR>
 "build and run current file
 map <F5> <ESC> :w <CR> :GoRun ./%< <CR>
 
+"代码补全
+imap <F6> <C-x><C-o>
+
 map <F8> :TagbarToggle<CR>
+
 map <F12> :!gotags -R ./ > tags <CR>
 
 let g:godef_split=3 """左右打开新窗口的时候
 let g:godef_same_file_in_same_window=1 """函数在同一个文件中时不需要打开新窗口
-imap <F2> <C-x><C-o>
 
 autocmd FileType go nnoremap <buffer> gd :call GodefUnderCursor()<cr>
 autocmd FileType go nnoremap <buffer> <C-]> :call GodefUnderCursor()<cr>
