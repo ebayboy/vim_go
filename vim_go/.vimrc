@@ -81,6 +81,11 @@ let g:tagbar_type_go = {
 			\ 'ctagsargs' : '-sort -silent'
 			\ }
 
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<F1>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 " set tagbar width
 let g:tagbar_width=30
 
