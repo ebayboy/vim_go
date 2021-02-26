@@ -46,11 +46,10 @@ set shiftwidth=4
 set autoindent
 set smartindent
 inoremap ' ''<ESC>i
-inoremap " ""<ESC>i
+""inoremap " ""<ESC>i
 inoremap ( ()<ESC>i
 inoremap [ []<ESC>i
-inoremap { {<CR>}<ESC>O
-
+""inoremap { {<CR>}<ESC>O
 
 "for gotags
 let g:tagbar_type_go = {
@@ -91,11 +90,11 @@ let g:tagbar_width=30
 
 map <F2> :!goimports -w ./% <CR>
 
-"build and run project
-map <F4>  <ESC> :w <CR> :GoRun<CR>
-
 "build and run current file
-map <F5> <ESC> :w <CR> :GoRun ./%< <CR>
+map <F4> <ESC> :w <CR> :GoRun ./% <CR>
+
+"build and run project
+map <F5>  <ESC> :w <CR> :GoRun<CR>
 
 "代码补全
 imap <F6> <C-x><C-o>
