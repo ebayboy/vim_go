@@ -45,11 +45,11 @@ set shiftwidth=4
 
 set autoindent
 set smartindent
-inoremap ' ''<ESC>i
-""inoremap " ""<ESC>i
-inoremap ( ()<ESC>i
-inoremap [ []<ESC>i
-""inoremap { {<CR>}<ESC>O
+"inoremap ' ''<ESC>i
+"inoremap " ""<ESC>i
+"inoremap ( ()<ESC>i
+"inoremap [ []<ESC>i
+"inoremap { {<CR>}<ESC>O
 
 "for gotags
 let g:tagbar_type_go = {

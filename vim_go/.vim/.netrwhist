@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/workspace/go/src/git.jd.com/fanpengfei1/wafapi/build'
+let g:netrw_dirhist_0='/etc/network'
+let g:netrw_dirhist_9='/workspace/export/servers/jfe/lualib/lua-resty-anti/resty/anti'
 let g:netrw_dirhist_8='/workspace/go/src/git.jd.com/fanpengfei1/mid/midserver/app/web/controllers/openapi_controller'
 let g:netrw_dirhist_7='/workspace/go/src/git.jd.com/fanpengfei1/wafapi/models'
 let g:netrw_dirhist_6='/workspace/go/src/git.jd.com/fanpengfei1/wafapi_bot_stat/wafapi/configure'
@@ -7,4 +10,3 @@ let g:netrw_dirhist_5='/root/.gvm/pkgsets'
 let g:netrw_dirhist_4='/workspace/go/src/git.jd.com/fanpengfei1/mid/build'
 let g:netrw_dirhist_3='/export/servers/riskStat/bin'
 let g:netrw_dirhist_2='/root/go/src/github.com/jd_log_proxy/src/JDRedis'
-let g:netrw_dirhist_1='/root/.vim/bundle/Vundle.vim'
