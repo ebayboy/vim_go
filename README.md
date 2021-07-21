@@ -15,3 +15,6 @@ apt install astyle
 - vim exec :PluginUpdate
 
 - vim/bundle/YouCompleteMe# /root/.vim/bundle/YouCompleteMe/install.py
+
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
