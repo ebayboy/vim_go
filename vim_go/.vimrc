@@ -15,11 +15,16 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
 Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
-Plugin 'SirVer/ultisnips'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
@@ -57,6 +62,16 @@ let g:go_highlight_functions = 1
 let g:go_highlight_function_calls = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_extra_types = 1
+
+"UltiSnips
+"插入模式下直接通过ii键来触发UltiSnips的代码块补全
+let g:UltiSnipsExpandTrigger="ii"
+"iI弹出UltiSnips的可用列表,不常用的, 所以这里设置成了特殊的iI映射
+let g:UltiSnipsListSnippets="iI"
+"II跳转的到下一个代码块可编辑区
+let g:UltiSnipsJumpForwardTrigger="II"
+"OO跳转到上一个代码块可编辑区
+let g:UltiSnipsJumpBackwardTrigger="OO"
 
 "for gotags
 let g:tagbar_type_go = {
